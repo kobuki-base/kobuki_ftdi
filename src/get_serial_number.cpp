@@ -1,12 +1,13 @@
+/*
+ * License: BSD
+ * URL: https://raw.githubusercontent.com/kobuki-base/kobuki_ftdi/license/LICENSE
+*/
 /**
  * @file src/get_serial_number.cpp
  *
  * @brief Print serial number of all the FTDI devices connected. With name of manufacture and product.
  *
  * It will not hurt any current connection.
- *
- * <b>License:</b> BSD https://raw.github.com/yujinrobot/kobuki_core/hydro-devel/kobuki_ftdi/LICENSE
- *
 */
 #include <iostream>
 
