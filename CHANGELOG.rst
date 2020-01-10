@@ -2,6 +2,10 @@
 Changelog
 =========
 
+0.9.0 (2020-01-09)
+------------------
+* migrated from kobuki_core to a standalone repo and only necessary for factory flashing/troubleshooting (avoids unnecessary dependencies)
+
 0.8.0 (2020-01-09)
 ------------------
 * build rules updated for ament
