@@ -1,3 +1,7 @@
+/*
+ * License: BSD
+ * URL: https://raw.githubusercontent.com/kobuki-base/kobuki_ftdi/license/LICENSE
+*/
 /**
  * @file src/unflasher.cpp
  *
@@ -5,9 +9,6 @@
  *
  * Flash automatically when there is not flashed FTDI devices.
  * (Later)This program accept loop mode
- *
- * <b>License:</b> BSD https://raw.github.com/yujinrobot/kobuki_core/hydro-devel/kobuki_ftdi/LICENSE
- *
  **/
 
 #include <iostream>

@@ -1,10 +1,11 @@
+/*
+ * License: BSD
+ * URL: https://raw.githubusercontent.com/kobuki-base/kobuki_ftdi/license/LICENSE
+*/
 /**
  * @file src/reset_device.cpp
  *
  * @brief Reset the all FTDI devices connected to load it again as standard tty device. After the flashing serial number.
- *
- * <b>License:</b> BSD https://raw.github.com/yujinrobot/kobuki_core/hydro-devel/kobuki_ftdi/LICENSE
- *
  **/
 #include <iostream>
 

@@ -1,3 +1,7 @@
+/*
+ * License: BSD
+ * URL: https://raw.githubusercontent.com/kobuki-base/kobuki_ftdi/license/LICENSE
+*/
 /**
  * @file src/find_devices.cpp
  *
@@ -7,9 +11,6 @@
  * Or not, exit with -1.
  *
  * find_devices does not need to run with root privileges.
- *
- * <b>License:</b> BSD https://raw.github.com/yujinrobot/kobuki_core/hydro-devel/kobuki_ftdi/LICENSE
- *
  **/
 #include <iostream>
 
