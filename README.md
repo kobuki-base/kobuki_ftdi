@@ -5,7 +5,8 @@ Kobuki FTDI
 [[How it Works](#how-it-works)][[Is it just Working?](#is-it-just-working?)][[Flashing the Device](#flashing-the-device)]
 
 This package provides tools for factory-flashing the FTDI usb-to-serial device
-on a kobuki or for troubleshooting thereafter.
+on a kobuki or for troubleshooting thereafter. It is not a necessary dependency
+for actually running a kobuki.
 
 ## How it Works
 
