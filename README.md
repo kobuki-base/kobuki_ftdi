@@ -5,8 +5,9 @@ Kobuki FTDI
 [[How it Works](#how-it-works)][[Is it just Working?](#is-it-just-working?)][[Flashing the Device](#flashing-the-device)]
 
 This package provides tools for factory-flashing the FTDI usb-to-serial device
-on a kobuki or for troubleshooting thereafter. It is not a necessary dependency
-for actually running a kobuki.
+on a kobuki or for troubleshooting thereafter. 
+
+**It is not a necessary dependency for actually running a kobuki.**
 
 ## How it Works
 
@@ -64,7 +65,7 @@ Device #0
 
 ## Trouble Shooting
 
-No `/dev/kobuki`:
+* No `/dev/kobuki`:
 
 ```
 # copy across udev rules
@@ -75,9 +76,16 @@ No `/dev/kobuki`:
 
 * Does kobuki stream data?
 
-> cat /dev/kobuki # check if any data stream happens
+Check if anything is streaming - even when you don't have a program explicitly connected, you should see a stream of unusual characters.
 
-Everything seems fine, yet I still can't get the kobuki driver to communicate with it. You may not be in the correct group:
+```
+> cat /dev/kobuki 
+```
+
+If you don't have any streaming, check that your kernel has the [ftdi_sio](http://ftdi-usb-sio.sourceforge.net/) kernel driver built. Refer to https://github.com/yujinrobot/kobuki_core/issues/24 for more discussion.
+
+
+* Everything seems fine, yet I still can't get the kobuki driver to communicate with it. You may not be in the correct group:
 
 ```
 > sudo addgroup $(USER) dialout
