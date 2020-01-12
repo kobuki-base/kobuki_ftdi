@@ -2,9 +2,13 @@
 Changelog
 =========
 
+Forthcoming
+-----------
+* [read] bugfix to process errors on return from ftdi_read_eeprom
+
 0.9.0 (2020-01-09)
 ------------------
-* migrated from kobuki_core to a standalone repo and only necessary for factory flashing/troubleshooting (avoids unnecessary dependencies)
+* migrated from kobuki_core to a standalone repo (flashing/troubleshooting purposes only)
 
 0.8.0 (2020-01-09)
 ------------------
