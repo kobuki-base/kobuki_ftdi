@@ -4,6 +4,11 @@ Changelog
 
 Forthcoming
 -----------
+* ...
+
+1.0.0 (2020-01-14)
+------------------
+* [infra] v1 release
 * [read] bugfix to process errors on return from ftdi_read_eeprom
 
 0.9.0 (2020-01-09)
