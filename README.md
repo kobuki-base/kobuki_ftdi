@@ -7,7 +7,7 @@ Kobuki FTDI
 This package provides tools for factory-flashing the FTDI usb-to-serial device
 on a kobuki or for troubleshooting thereafter. 
 
-**It is not a necessary dependency for actually running a kobuki.**
+**It is not a necessary dependency for the Kobuki runtime.**
 
 ## How it Works
 
