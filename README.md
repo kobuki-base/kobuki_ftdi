@@ -4,8 +4,8 @@ Kobuki FTDI
 
 [[How it Works](#how-it-works)][[Is it just Working?](#is-it-just-working?)][[Flashing the Device](#flashing-the-device)]
 
-This package provides tools for factory-flashing the FTDI usb-to-serial device
-on a kobuki or for troubleshooting thereafter. 
+This package provides tools for factory-flashing the [FT232R](https://www.ftdichip.com/Products/ICs/FT232R.htm) usb-to-serial
+converter from [FTDI](https://www.ftdichip.com/) on a Kobuki or for troubleshooting thereafter. 
 
 **It is not a necessary dependency for the Kobuki runtime.**
 
