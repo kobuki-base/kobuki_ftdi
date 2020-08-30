@@ -1,11 +1,17 @@
 # Kobuki FTDI
 
+![Kobuki Logo](resources/kobuki.png)
+
+----
+
 This package provides tools for flashing the [FT232R](https://www.ftdichip.com/Products/ICs/FT232R.htm) usb-to-serial
 converter from [FTDI](https://www.ftdichip.com/) on a Kobuki. 
 
 **It is not a necessary dependency for the Kobuki runtime.**
 
 For user information on troubleshooting a USB connection, refer to [Kobuki Documentation/Troubleshooting](https://kobuki.readthedocs.io/en/devel/troubleshooting.html).
+
+----
 
 ## Dev Notes
 
