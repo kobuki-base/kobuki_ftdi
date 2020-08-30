@@ -1,21 +1,30 @@
-Kobuki FTDI
-===========
+# Kobuki FTDI
 
-
-[[How it Works](#how-it-works)][[Is it just Working?](#is-it-just-working?)][[Flashing the Device](#flashing-the-device)]
-
-This package provides tools for factory-flashing the [FT232R](https://www.ftdichip.com/Products/ICs/FT232R.htm) usb-to-serial
-converter from [FTDI](https://www.ftdichip.com/) on a Kobuki or for troubleshooting thereafter. 
+This package provides tools for flashing the [FT232R](https://www.ftdichip.com/Products/ICs/FT232R.htm) usb-to-serial
+converter from [FTDI](https://www.ftdichip.com/) on a Kobuki. 
 
 **It is not a necessary dependency for the Kobuki runtime.**
 
-## How it Works
+For user information on troubleshooting a USB connection, refer to [Kobuki Documentation/Troubleshooting](https://kobuki.readthedocs.io/en/devel/troubleshooting.html).
+
+## Dev Notes
+
+### How it Works
 
 Kobuki's FTDI chip is flashed with a special identifier that allows programs
 to uniquely identify the device as a kobuki. This in turn allows for udev rules
 that conveniently establish it's presence in a *nix filesystem under `/dev/kobuki`.
 
-## Is it just Working?
+To test:
+
+```
+# copy across udev rules
+> sudo cp 60-kobuki.rules /etc/udev/rules.d
+> sudo service udev reload
+> sudo service udev restart
+```
+
+### Is it Working?
 
 Does kobuki appear as USB device?
 
@@ -63,35 +72,7 @@ Device #0
   Serial Number: kobuki_A505QO28
 ```
 
-## Trouble Shooting
-
-* No `/dev/kobuki`:
-
-```
-# copy across udev rules
-> sudo cp 60-kobuki.rules /etc/udev/rules.d
-> sudo service udev reload
-> sudo service udev restart
-```
-
-* Does kobuki stream data?
-
-Check if anything is streaming - even when you don't have a program explicitly connected, you should see a stream of unusual characters.
-
-```
-> cat /dev/kobuki 
-```
-
-If you don't have any streaming, check that your kernel has the [ftdi_sio](http://ftdi-usb-sio.sourceforge.net/) kernel driver built. Refer to https://github.com/yujinrobot/kobuki_core/issues/24 for more discussion.
-
-
-* Everything seems fine, yet I still can't get the kobuki driver to communicate with it. You may not be in the correct group:
-
-```
-> sudo addgroup $(USER) dialout
-```
-
-## Flashing the Device
+### Flashing the Device
 
 Only do this if you are at the factory or you are very certain it is necessary.
 This should rarely need to be done outside of the factory.
